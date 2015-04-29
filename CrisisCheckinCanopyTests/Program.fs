@@ -4,9 +4,13 @@ open runner
 open System
 
 //start an instance of the firefox browser
-start firefox
-//start chrome
+//start firefox
+start chrome
 //start ie
+
+pin canopy.types.direction.Left
+pin canopy.types.direction.Right 
+pin canopy.types.direction.FullScreen
 
 //go to url
 url "http://localhost:2077/Account/Login"

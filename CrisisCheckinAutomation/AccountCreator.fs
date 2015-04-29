@@ -12,4 +12,11 @@ let CreateAccount firstName lastName =
 
     "#FirstName" << firstName
     "#LastName" << lastName
+    "#PhoneNumber" << "123.456.7890"
     "#Email" << firstName + "." + lastName + "@mailinator.com"
+    "#txt_userName" << firstName + "." + lastName
+
+    "#Password" << "monkey"
+    "#ConfirmPassword" << "monkey"
+    "#Cluster" << "Agriculture Cluster"
+    click "Create new account"

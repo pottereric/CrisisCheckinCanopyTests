@@ -5,14 +5,14 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>f5a66a3f-8459-4124-8e71-182f6d283e31</ProjectGuid>
+    <ProjectGuid>acd7ee38-b637-4091-86b3-8514c03f0fcb</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>CrisisCheckinCanopyTests</RootNamespace>
-    <AssemblyName>CrisisCheckinCanopyTests</AssemblyName>
+    <RootNamespace>CrisisCheckinAutomation</RootNamespace>
+    <AssemblyName>CrisisCheckinAutomation</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <TargetFSharpCoreVersion>4.3.1.0</TargetFSharpCoreVersion>
-    <Name>1 CrisisCheckinCanopyTests</Name>
+    <Name>2 CrisisCheckinAutomation</Name>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -23,7 +23,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <WarningLevel>3</WarningLevel>
     <PlatformTarget>AnyCPU</PlatformTarget>
-    <DocumentationFile>bin\Debug\CrisisCheckinCanopyTests.XML</DocumentationFile>
+    <DocumentationFile>bin\Debug\CrisisCheckinAutomation.XML</DocumentationFile>
     <Prefer32Bit>true</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
@@ -34,12 +34,13 @@
     <DefineConstants>TRACE</DefineConstants>
     <WarningLevel>3</WarningLevel>
     <PlatformTarget>AnyCPU</PlatformTarget>
-    <DocumentationFile>bin\Release\CrisisCheckinCanopyTests.XML</DocumentationFile>
+    <DocumentationFile>bin\Release\CrisisCheckinAutomation.XML</DocumentationFile>
     <Prefer32Bit>true</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="canopy">
-      <HintPath>C:\Projects\canopy\bin\canopy.dll</HintPath>
+      <HintPath>..\packages\canopy.0.9.22\lib\canopy.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="FSharp.Core">
       <HintPath>..\packages\FSharp.Core.3.0.2\lib\net40\FSharp.Core.dll</HintPath>
@@ -68,6 +69,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AccountCreator.fs" />
     <Compile Include="Program.fs" />
     <None Include="App.config" />
     <None Include="packages.config" />

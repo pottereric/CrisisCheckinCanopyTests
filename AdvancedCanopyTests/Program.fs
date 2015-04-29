@@ -5,10 +5,17 @@ open System
 
 //start an instance of the firefox browser
 start firefox
-AccountCreator.CreateAccount "Anthony" "Rizzo"
-AccountCreator.CreateAccount "Javier" "Baez"
-AccountCreator.CreateAccount "Starlin" "Castro"
-AccountCreator.CreateAccount "Kris" "Bryant"
+
+
+//go to url
+url "http://localhost:2077/Account/Login"
+
+
+//this is how you define a test
+"The title is correct." &&& fun _ ->
+
+    // Validate the error message
+    title() |> is "Crisis Checkin"
 
 
 //run all tests
