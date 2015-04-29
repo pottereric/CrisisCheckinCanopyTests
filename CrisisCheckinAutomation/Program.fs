@@ -9,6 +9,7 @@ AccountCreator.CreateAccount "Anthony" "Rizzo"
 AccountCreator.CreateAccount "Javier" "Baez"
 AccountCreator.CreateAccount "Starlin" "Castro"
 AccountCreator.CreateAccount "Kris" "Bryant"
+AccountCreator.CreateAccount "Addison" "Russell"
 
 
 //run all tests

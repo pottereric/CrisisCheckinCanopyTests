@@ -18,6 +18,19 @@ url "http://localhost:2077/Account/Login"
     title() |> is "Crisis Checkin"
 
 
+
+"Make sure the user can login" &&& fun _ ->
+    "input#UserName" << "Anthony.Rizzo"
+    "input#Password" << "monkey"
+    click "input.btn-success"
+    displayed "div#loginStatus"
+    screenshot @"C:\temp" "MainPage" |> ignore
+
+"Check how it looks on an iPhone" &&& fun _ ->
+    resize screenSizes.iPhone5
+
+
+
 //run all tests
 run()
 
