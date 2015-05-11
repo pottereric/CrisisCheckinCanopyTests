@@ -4,7 +4,8 @@ open runner
 open System
 
 //start an instance of the firefox browser
-start firefox
+//start firefox
+start chrome
 
 
 //go to url
