@@ -21,7 +21,7 @@ url "http://localhost:2077/Account/Login"
 
 
 "Make sure the user can login" &&& fun _ ->
-    "input#UserName" << "Anthony.Rizzo"
+    "input#UserNameOrEmail" << "Anthony.Rizzo"
     "input#Password" << "monkey"
     click "input.btn-success"
     displayed "div#loginStatus"
