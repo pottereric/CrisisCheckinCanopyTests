@@ -8,7 +8,7 @@ start firefox
 //start chrome
 //start ie
 
-//pin canopy.types.direction.Left
+pin canopy.types.direction.Left
 //pin canopy.types.direction.Right 
 //pin canopy.types.direction.FullScreen
 
@@ -16,7 +16,7 @@ start firefox
 url "http://localhost:2077/Account/Login"
 
 // enter the user name
-"#UserName" << "Frank"
+"#UserNameOrEmail" << "Frank"
 
 // enter the password
 "#Password" << "notThePassword"
@@ -28,11 +28,14 @@ click "input.btn-success"
 "The invalid username message is displayed" &&& fun _ ->
 
     // Validate the error message
-    "div.validation-summary-errors" == "The user name or password provided is incorrect."
+    "div.validation-summary-errors" == "The username/email or password provided is incorrect."
 
 "The password is blank" &&& fun _ ->
     // Validate the blank password input element
+    
     "#Password" == ""
+//    "#Password" == "MakeThisFail"
+
 
 
 //run all tests
